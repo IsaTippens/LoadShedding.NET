@@ -1,14 +1,18 @@
+using System.ComponentModel;
+
 namespace LoadShedding.NET
 {
     public enum LoadSheddingStatus
     {
         Unknown,
         None,
+        [Description("Currently load shedding")]
         IsLoadShedding
     }
 
-    public static class LoadSheddingStatusExtensions
+    static class LoadSheddingStatusExtensions
     {
+
         public static string ToString(this LoadSheddingStatus status)
         {
             switch (status)
