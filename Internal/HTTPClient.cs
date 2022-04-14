@@ -1,4 +1,4 @@
-using System.Net.Http;
+using System.Web;
 using System.Net;
 
 namespace LoadShedding.NET.Internal
@@ -40,5 +40,6 @@ namespace LoadShedding.NET.Internal
             return response;
 
         }
+
     }
 }
